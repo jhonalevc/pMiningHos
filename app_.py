@@ -144,7 +144,7 @@ df_variants_level_100 = pd.read_csv('dataframes/df_variants_level_100.csv')
 
 
 time_head =pd.read_csv('dataframes/time_head.csv')
-cases_df_list = pd.read_csv('dataframes\cases_df_list.csv')
+cases_df_list = pd.read_csv('dataframes/cases_df_list.csv')
 
 
 
@@ -168,8 +168,8 @@ if selectbox == 'Intro':
     st.markdown("""<h1 style='text-align: center'>Introduction  - Process Mining Project Net</h1>""",unsafe_allow_html=True) 
     y1,y2 = st.columns(2)
     with y2:
-        ##st.image(r'Images\1-j3dTgXjyaYPo9XkM6UMZ3g-removebg-preview.png',use_column_width=True )
-        st.image(r'images\logo1.png')
+        ##st.image(r'images/1-j3dTgXjyaYPo9XkM6UMZ3g-removebg-preview.png',use_column_width=True )
+        st.image(r'images/logo1.png')
         #st.markdown("""<h1 style='text-align: center'> IMAGE GOES HERE !!! </h1>""",unsafe_allow_html=True)    
     with y1:
         st.markdown("<br>",unsafe_allow_html=True)
@@ -193,7 +193,7 @@ if selectbox == 'Intro':
     with st.expander("Expand to see the basic layout of the project architecture"):
         v1,v2,v3,v4,v5,v6,v7 = st.columns([1,1,1,17,1,1,1]) 
         with v4: 
-            st.image(r'images\logo2.png',use_column_width=True )
+            st.image(r'images/logo2.png',use_column_width=True )
             #st.markdown("""<h1 style='text-align: center'> IMAGE GOES HERE !!! </h1>""",unsafe_allow_html=True)
     i1,i2 = st.columns([2,1])
     with i1:
@@ -1167,7 +1167,7 @@ if selectbox == 'Process':
             t1,t2 = st.columns(2)
             with t1:
                 title_centered_h3("Heurist Net")
-                st.image('Images/heuristic_1.png',use_column_width=False)
+                st.image('images/heuristic_1.png',use_column_width=False)
             with t2:
                 st.markdown("""<br><br><br>""",unsafe_allow_html=True)
                 title_centered_h3("Starting Activities")
@@ -1175,7 +1175,7 @@ if selectbox == 'Process':
                 title_centered_h3("End Activities")
                 st.dataframe(transp_corr(df_end_act_1),use_container_width =True)
                 st.markdown("""<h3 style='text-align:center'> Download Net </h3>""",unsafe_allow_html=True)
-                st.download_button("Download Net",data = download_image('Images/heuristic_1.png'),mime="image/jpeg")
+                st.download_button("Download Net",data = download_image('images/heuristic_1.png'),mime="image/jpeg")
         st.markdown("<hr>",unsafe_allow_html=True)
         with st.container():
             with st.expander('Additional Info'):
@@ -1230,7 +1230,7 @@ if selectbox == 'Process':
             a1,a2 = st.columns(2)
             with a1:
                 title_centered_h3("Heurist Net")
-                st.image('Images/heuristic_16.png',use_column_width=False)
+                st.image('images/heuristic_16.png',use_column_width=False)
             with a2:
                 st.markdown("""<br><br><br>""",unsafe_allow_html=True)
                 title_centered_h3("Starting Activities")
@@ -1238,7 +1238,7 @@ if selectbox == 'Process':
                 title_centered_h3("End Activities")
                 st.dataframe(transp_corr(df_end_act_16),use_container_width =True)
                 st.markdown("""<h3 style='text-align:center'> Download Net </h3>""",unsafe_allow_html=True)
-                st.download_button("Download Net",data = download_image('Images/heuristic_16.png'),mime="image/jpeg")
+                st.download_button("Download Net",data = download_image('images/heuristic_16.png'),mime="image/jpeg")
         st.markdown("<hr>",unsafe_allow_html=True)
         with st.container():
             with st.expander('Additional Info'):
@@ -1293,7 +1293,7 @@ if selectbox == 'Process':
             a1,a2 = st.columns(2)
             with a1:
                 title_centered_h3("Heurist Net")
-                st.image('Images/heuristic_31.png',use_column_width=False)
+                st.image('images/heuristic_31.png',use_column_width=False)
             with a2:
                 st.markdown("""<br><br><br>""",unsafe_allow_html=True)
                 title_centered_h3("Starting Activities")
@@ -1301,7 +1301,7 @@ if selectbox == 'Process':
                 title_centered_h3("End Activities")
                 st.dataframe(transp_corr(df_end_act_31),use_container_width =True)
                 st.markdown("""<h3 style='text-align:center'> Download Net </h3>""",unsafe_allow_html=True)
-                st.download_button("Download Net",data = download_image('Images/heuristic_31.png'),mime="image/jpeg")
+                st.download_button("Download Net",data = download_image('images/heuristic_31.png'),mime="image/jpeg")
         st.markdown("<hr>",unsafe_allow_html=True)
         with st.container():
             with st.expander('Additional Info'):
@@ -1356,7 +1356,7 @@ if selectbox == 'Process':
             a1,a2 = st.columns(2)
             with a1:
                 title_centered_h3("Heurist Net")
-                st.image('Images/heuristic_46.png',use_column_width=False)
+                st.image('images/heuristic_46.png',use_column_width=False)
             with a2:
                 st.markdown("""<br><br><br>""",unsafe_allow_html=True)
                 title_centered_h3("Starting Activities")
@@ -1364,7 +1364,7 @@ if selectbox == 'Process':
                 title_centered_h3("End Activities")
                 st.dataframe(transp_corr(df_end_act_46),use_container_width =True)
                 st.markdown("""<h3 style='text-align:center'> Download Net </h3>""",unsafe_allow_html=True)
-                st.download_button("Download Net",data = download_image('Images/heuristic_46.png'),mime="image/jpeg")
+                st.download_button("Download Net",data = download_image('images/heuristic_46.png'),mime="image/jpeg")
         st.markdown("<hr>",unsafe_allow_html=True)
         with st.container():
             with st.expander('Additional Info'):
@@ -1418,7 +1418,7 @@ if selectbox == 'Process':
             a1,a2 = st.columns(2)
             with a1:
                 title_centered_h3("Heurist Net")
-                st.image('Images/heuristic_61.png',use_column_width=True)
+                st.image('images/heuristic_61.png',use_column_width=True)
             with a2:
                 st.markdown("""<br><br><br><br><br><br>""",unsafe_allow_html=True)
                 title_centered_h3("Starting Activities")
@@ -1426,7 +1426,7 @@ if selectbox == 'Process':
                 title_centered_h3("End Activities")
                 st.dataframe(transp_corr(df_end_act_61),use_container_width =True)
                 st.markdown("""<h3 style='text-align:center'> Download Net </h3>""",unsafe_allow_html=True)
-                st.download_button("Download Net",data = download_image('Images/heuristic_61.png'),mime="image/jpeg")
+                st.download_button("Download Net",data = download_image('images/heuristic_61.png'),mime="image/jpeg")
         st.markdown("<hr>",unsafe_allow_html=True)
         with st.container():
             with st.expander('Additional Info'):
@@ -1481,7 +1481,7 @@ if selectbox == 'Process':
             a1,a2 = st.columns(2)
             with a1:
                 title_centered_h3("Heurist Net")
-                st.image('Images/heuristic_76.png',use_column_width=True)
+                st.image('images/heuristic_76.png',use_column_width=True)
             with a2:
                 st.markdown("""<br><br><br><br><br><br>""",unsafe_allow_html=True)
                 title_centered_h3("Starting Activities")
@@ -1489,7 +1489,7 @@ if selectbox == 'Process':
                 title_centered_h3("End Activities")
                 st.dataframe(transp_corr(df_end_act_76),use_container_width =True)
                 st.markdown("""<h3 style='text-align:center'> Download Net </h3>""",unsafe_allow_html=True)
-                st.download_button("Download Net",data = download_image('Images/heuristic_76.png'),mime="image/jpeg")
+                st.download_button("Download Net",data = download_image('images/heuristic_76.png'),mime="image/jpeg")
         st.markdown("<hr>",unsafe_allow_html=True)
         with st.container():
             with st.expander('Additional Info'):
@@ -1543,7 +1543,7 @@ if selectbox == 'Process':
             a1,a2 = st.columns(2)
             with a1:
                 title_centered_h3("Heurist Net")
-                st.image('Images/heuristic_91.png',use_column_width=True)
+                st.image('images/heuristic_91.png',use_column_width=True)
             with a2:
                 st.markdown("""<br><br><br><br><br><br>""",unsafe_allow_html=True)
                 title_centered_h3("Starting Activities")
@@ -1551,7 +1551,7 @@ if selectbox == 'Process':
                 title_centered_h3("End Activities")
                 st.dataframe(transp_corr(df_end_act_91),use_container_width =True)
                 st.markdown("""<h3 style='text-align:center'> Download Net </h3>""",unsafe_allow_html=True)
-                st.download_button("Download Net",data = download_image('Images/heuristic_91.png'),mime="image/jpeg")
+                st.download_button("Download Net",data = download_image('images/heuristic_91.png'),mime="image/jpeg")
         st.markdown("<hr>",unsafe_allow_html=True)
         with st.container():
             with st.expander('Additional Info'):
@@ -1606,7 +1606,7 @@ if selectbox == 'Process':
             a1,a2 = st.columns(2)
             with a1:
                 title_centered_h3("Heurist Net")
-                st.image('Images/heuristic_100.png',use_column_width=True)
+                st.image('images/heuristic_100.png',use_column_width=True)
             with a2:
                 st.markdown("""<br><br><br><br><br><br>""",unsafe_allow_html=True)
                 title_centered_h3("Starting Activities")
@@ -1614,7 +1614,7 @@ if selectbox == 'Process':
                 title_centered_h3("End Activities")
                 st.dataframe(transp_corr(df_end_act_100),use_container_width =True)
                 st.markdown("""<h3 style='text-align:center'> Download Net </h3>""",unsafe_allow_html=True)
-                st.download_button("Download Net",data = download_image('Images/heuristic_100.png'),mime="image/jpeg")
+                st.download_button("Download Net",data = download_image('images/heuristic_100.png'),mime="image/jpeg")
         st.markdown("<hr>",unsafe_allow_html=True)
         with st.container():
             with st.expander('Additional Info'):
@@ -1698,7 +1698,7 @@ if selectbox == 'Data':
             """)
         with g2:
             title_centered_h3("Attributes")
-            st.dataframe(pd.read_csv("dataframes/dataframes\Dataset Atrbutes.csv"))
+            st.dataframe(pd.read_csv("dataframes/dataframes/Dataset Atrbutes.csv"))
  
 
 

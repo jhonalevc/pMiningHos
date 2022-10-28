@@ -7,6 +7,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     build-essential \
     software-properties-common \
+    libpq-dev gcc \
     git \
     && rm -rf /var/lib/apt/lists/*
 
